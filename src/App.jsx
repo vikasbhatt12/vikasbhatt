@@ -16,6 +16,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/resume" element={<Resume />} />
+          {/* Add a catch-all route for 404 pages */}
+          <Route path="*" element={<Home />} />
         </Routes>
       </div>
     </Router>

@@ -32,12 +32,14 @@ const Header = () => {
     >
       <nav className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <motion.div 
-            whileHover={{ scale: 1.05 }}
-            className="text-2xl font-heading font-bold gradient-text"
-          >
-            VB
-          </motion.div>
+          <Link to="/">
+            <motion.div 
+              whileHover={{ scale: 1.05 }}
+              className="text-2xl font-heading font-bold gradient-text"
+            >
+              VB
+            </motion.div>
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
@@ -50,14 +52,13 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
-            <motion.a
-              href="/resume"
-              whileHover={{ scale: 1.05 }}
+            <Link
+              to="/resume"
               className="btn text-sm"
             >
               <FileText size={16} className="mr-2" />
               Resume
-            </motion.a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}

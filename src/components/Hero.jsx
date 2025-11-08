@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { ChevronDown, Sparkles, MapPin } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   const techStack = ['C++', 'Java', 'JavaScript', 'Python', 'SQL', 'React', 'Node.js', 'MongoDB']
@@ -44,7 +45,7 @@ const Hero = () => {
               className="inline-flex items-center gap-2 bg-secondary/50 backdrop-blur-sm border border-dark-200 rounded-full px-4 py-2 mb-8"
             >
               <Sparkles size={16} className="text-gradient-start" />
-              <span className="text-sm text-gray-300">MERN Full Stack Developer</span>
+              <span className="text-sm text-gray-300">Full-Stack Developer</span>
             </motion.div>
 
             <motion.h1
@@ -68,8 +69,8 @@ const Hero = () => {
               variants={itemVariants}
               className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed"
             >
-              B.Tech Student at <span className="gradient-text font-semibold">IIIT Guwahati</span>. 
-              Passionate about full-stack development and building innovative web solutions.
+              ECE Graduate from <span className="gradient-text font-semibold">IIIT Guwahati</span> | 
+              Full-Stack Developer specializing in building performant web applications with cutting-edge technologies.
             </motion.p>
 
             <motion.div
@@ -99,9 +100,9 @@ const Hero = () => {
               <a href="#projects" className="btn">
                 View My Projects
               </a>
-              <a href="/resume" className="btn-outline">
+              <Link to="/resume" className="btn-outline">
                 View Resume
-              </a>
+              </Link>
             </motion.div>
           </motion.div>
 
